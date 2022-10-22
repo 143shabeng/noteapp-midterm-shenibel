@@ -1,6 +1,7 @@
-const fs = require('fs')
+const present = function(note) {
+    let newNote = JSON.parse(note);
 
-const write = function(data="default"){
-    fs.writeFileSync('note.txt', data);
-} 
-module.exports = write;
+    console.log(newNote);
+}
+
+module.exports = present;
